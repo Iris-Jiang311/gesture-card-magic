@@ -28,22 +28,28 @@ export default function App() {
   const [selectedCards, setSelectedCards] = useState([]);
   const [captureProgress, setCaptureProgress] = useState(0);
 
-  const cards = [
-    "Ethan Carter",
-    "Olivia Bennett",
-    "Lucas Morgan",
-    "Sophia Turner",
-    "Noah Mitchell",
-    "Amelia Brooks",
-    "Benjamin Hayes",
-    "Charlotte Reed",
-    "Alexander Scott",
-    "Grace Walker",
-    "Daniel Cooper",
-    "Lily Foster",
-    "Matthew Collins",
-    "Ava Richardson",
-    "Samuel Parker",
+ const cards = [
+    "Amine D.",
+    "Anna K.",
+    "Hanna Å.",
+    "Gustav H.",
+    "Kaven Q.",
+    "William X.",
+    "Fiona L.",
+    "Iris J.",
+    "Peter W.",
+    "FAN Y.",
+    "MATTIAS F.",
+    "JOHANNA J.",
+    "THERESA Z.",
+    "EMILY Z.",
+    "OLIVIA T.",
+    "TIAGO NG.",
+    "SUMANTH H.",
+    "LUCA Z.",
+    "NICOLE Y.",
+    "SUNNY W.",
+    "FELIX W.",
   ];
 
   useEffect(() => {
@@ -355,7 +361,7 @@ export default function App() {
       const rotationAngle = offset * 90;
       const angle = baseAngle + rotationAngle;
       const angleRad = (angle * Math.PI) / 180;
-      const z = Math.cos(angleRad) * 400;
+      const z = Math.cos(angleRad) * 480;
 
       if (z > maxZ) {
         maxZ = z;
@@ -450,8 +456,8 @@ export default function App() {
             const baseAngle = (360 / totalCards) * index;
 
             const rotationSpeed = 90;
-            const radiusX = isCapturingPose ? 30 : 460;
-            const radiusZ = isCapturingPose ? 0 : 400;
+            const radiusX = isCapturingPose ? 30 : 560;
+            const radiusZ = isCapturingPose ? 0 : 480;
 
             const rotationAngle = carouselOffset * rotationSpeed;
             const angle = baseAngle + rotationAngle;
