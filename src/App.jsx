@@ -50,6 +50,7 @@ export default function App() {
     "NICOLE Y.",
     "SUNNY W.",
     "FELIX W.",
+    "JOHAN H."
   ];
 
   useEffect(() => {
